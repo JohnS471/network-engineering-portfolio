@@ -18,8 +18,6 @@ R2   G0/0 10.10.10.2   |  G0/1 192.168.2.1
 PC2 (Alpine) 192.168.2.10
 ```
 
-*(Replace with Lucidchart diagram before publishing.)*
-
 ---
 
 ## Baseline Configuration
