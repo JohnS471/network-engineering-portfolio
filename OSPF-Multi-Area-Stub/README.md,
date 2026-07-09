@@ -123,4 +123,3 @@ R6 can still reach the external networks — it just sends that traffic to R5 vi
 ## What I Learned
 
 This lab tied together every layer of OSPF into one design. Building the multi-access segment showed the DR/BDR election live. The ABRs (R4 and R5) demonstrated how inter-area routes move as Type 3 summaries. Making R1 an ASBR showed external routes entering OSPF as Type 5 externals (O E2). And the stub area was the payoff — proving that Area 56 filters out external routes and relies on a single default route instead, which I could see directly by comparing R4's routing table (full external routes) against R6's (just a default). The biggest takeaway was seeing how each LSA type maps to a specific job, and how a stub area intentionally limits which LSAs it accepts to keep edge routing tables lean.
-
